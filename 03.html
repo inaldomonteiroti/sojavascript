@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Exemplo getElementByClass</title>
+  <script>
+  var elemento = document.querySelector(".para1"); 
+  console.log(elemento);   
+  function mudarCor(novaCor) {
+    var elemento = document.querySelector(".para1");
+    console.log(novaCor);
+    elemento.style.color = novaCor;
+  }
+  </script>
+</head>
+<body>
+  <p class="para1">Algum texto de exemplo</p>
+  <button onclick="mudarCor('blue');">Azul</button>
+  <button onclick="mudarCor('red');">Vermelho</button>
+</body>
+</html>
